@@ -5,7 +5,7 @@ export function CustomCursor() {
   const ringRef = useRef<HTMLDivElement>(null);
   const mouse = useRef({ x: 0, y: 0 });
   const ringPos = useRef({ x: 0, y: 0 });
-  const animRef = useRef<number>();
+  const animRef = useRef<number>(0);
 
   useEffect(() => {
     const onMove = (e: MouseEvent) => {

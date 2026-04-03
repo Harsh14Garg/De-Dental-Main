@@ -22,7 +22,6 @@ export default function AppointmentForm() {
     try {
       await bookAppointment({
         ...formData,
-        status: 'pending'
       });
       setIsSuccess(true);
       setFormData({
